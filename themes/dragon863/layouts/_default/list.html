@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<h3 class="bold underline padding">Posts</h3>
+<div class="grid">
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <div class="s12">
+        <article class="padding">
+            <div class="">
+                <h5>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <span style="font-size: 1rem;">&nbsp;- {{ .Date.Format "January 2, 2006"}}</span>
+                </h5>
+                <p>
+                    <!--{{ partial "metadata.html" . }} -->
+                    <a class="summary" href="{{ .RelPermalink }}">
+                        <p>{{ .Summary }}</p>
+                    </a>
+                </p>
+            </div>
+            {{ end }}
+            {{ end }}
