@@ -1,5 +1,5 @@
 ---
-title: "Bookshelf AI Instructable"
+title: "> Bookshelf AI Instructable"
 date: 2024-06-21T10:00:00+01:00
 buttons:
   - href: "https://www.instructables.com/Remaking-the-Bookshelf-With-AI/"

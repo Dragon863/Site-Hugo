@@ -1,9 +1,14 @@
 ---
-title: "Alexa, what is my Wi-Fi password?"
-date: 2024-06-25
+title: "> Alexa, what is my Wi-Fi password?"
+date: 2023-03-16
+draft: false
 header_image: "echo.jpeg"
 header_image_fit: cover
 ---
+
+Taking a closer look at the echo dot 2nd generation using a known CPU exploit reveals a lack of security for its password storage.
+
+<!--more-->
 
 Amazon is well known for its "echo" devices. Launched in 2014, these voice assistants were used to interact with Amazon's services, answer questions, and stream music. As time went on, the devices grew in popularity; as of 2023 they account for 21.7% of global smart speaker purchases. There have been several notable attempts to run custom software on echo devices, such as [this](https://github.com/echohacking/wiki/wiki/Echo) project, however they have proven to be relatively secure. With so many devices in use, a weaponized echo device could be a very dangerous tool, allowing eavesdropping on sensitive conversations, giving false responses, or extracting sensitive information such as Wi-Fi passwords. More modern devices from the company run FireOS, Amazon's modified version of Android, on a MediaTek CPU. This is interesting, as it means both the hardware and software are similar to that found on Amazon Fire tablets. I have been experimenting with an Echo Dot 2nd generation, which uses an MT8163 processor found in the HD 8 from 2018. This fire tablet was rooted using an exploit known as [amonet](https://github.com/xyzz/amonet), which means it was possible to port this exploit to the Echo.
 
@@ -11,7 +16,8 @@ Amazon is well known for its "echo" devices. Launched in 2014, these voice assis
 
 After a few minor modifications, I managed to make the main amonet script dump the contents of the storage (eMMC flash memory). The modified version can be found [here](https://github.com/Dragon863/amonet-echo), and a graphical version is available [here](https://github.com/Dragon863/amonet-graphical/releases). The memory can be dumped when the device is in bootrom mode, which can be forced by placing a piece of tin foil to short the capacitor shown below to the RF shield, which temporarily prevents it from being able to boot. For a detailed disassembly guide, please check iFixit.
 
-![The main board of the Echo](mainboard.jpg class="round m l")
+<img class="round m l" src="mainboard.jpg" style="width:30rem;height:30rem" alt="The main board of the echo"></img>
+<img class="round s" src="mainboard.jpg" style="width:100%;height:100%" alt="The main board of the echo">
 
 Once I had the filesystem, I began to analyze its contents, and what I found was very interesting. It seemed to use a tool called `wpa_supplicant` to manage its wireless connections, which is not uncommon on older Android versions. When using this tool, it is good practice to hash the password for the wireless network before storing it in the configuration file (encrypt it in a way that cannot be reversed). This can be done with one simple command (wpa_passphrase), however, Amazon's internal team Lab126 (who develops their consumer hardware), chose not to use this. It may not seem like a significant decision, however, when you consider that anyone with physical access to an Amazon device using this vulnerable processor (it is also used by multiple Echo Show devices) can extract network passwords with relative ease.
 

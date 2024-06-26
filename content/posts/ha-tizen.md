@@ -1,5 +1,5 @@
 ---
-title: "New release: HA-Tizen"
+title: "> New release: HA-Tizen"
 date: 2023-12-09T10:00:00+01:00
 buttons:
   - href: "https://github.com/Dragon863/Tizen-HA/"

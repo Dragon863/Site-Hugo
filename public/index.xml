@@ -6,35 +6,42 @@
     <description>Recent content on Dragon863</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Jun 2024 10:00:00 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alexa, what is my Wi-Fi password?</title>
-      <link>//localhost:1313/posts/alexa-1/</link>
-      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/alexa-1/</guid>
-      <description>Amazon is well known for its &amp;ldquo;echo&amp;rdquo; devices. Launched in 2014, these voice assistants were used to interact with Amazon&amp;rsquo;s services, answer questions, and stream music. As time went on, the devices grew in popularity; as of 2023 they account for 21.7% of global smart speaker purchases. There have been several notable attempts to run custom software on echo devices, such as this project, however they have proven to be relatively secure.</description>
-    </item>
-    <item>
-      <title>Bookshelf AI Instructable</title>
+      <title>&gt; Bookshelf AI Instructable</title>
       <link>//localhost:1313/posts/instructable/</link>
       <pubDate>Fri, 21 Jun 2024 10:00:00 +0100</pubDate>
       <guid>//localhost:1313/posts/instructable/</guid>
       <description>A small side project using a Pi 4B and opencv to recommend books. This was mostly an experiment with LLMs and test whether it was possible to generate recommendations without models &amp;ldquo;hallucinating&amp;rdquo;.</description>
     </item>
     <item>
-      <title>New release: HA-Tizen</title>
+      <title>&gt; New release: HA-Tizen</title>
       <link>//localhost:1313/posts/ha-tizen/</link>
       <pubDate>Sat, 09 Dec 2023 10:00:00 +0100</pubDate>
       <guid>//localhost:1313/posts/ha-tizen/</guid>
       <description>This is a small, unofficial companion app written using flutter-tizen to control lights and switches using Home Assistant. I created it because I wanted to use Home Assistant on my tizen watch which is no longer officially supported by Samsung, and wanted there to be a way to control devices without manually typing out tokens.</description>
     </item>
     <item>
-      <title>New release: ThinkLED</title>
+      <title>&gt; New release: ThinkLED</title>
       <link>//localhost:1313/posts/thinkled/</link>
       <pubDate>Mon, 20 Nov 2023 10:00:00 +0100</pubDate>
       <guid>//localhost:1313/posts/thinkled/</guid>
       <description>ThinkLED is a simple flutter app for thinkpads using tpacpi on linux. It can be used to toggle the power and lid LEDs, or transmit a message in morse code using the lid LED. This is my first flutter project</description>
+    </item>
+    <item>
+      <title>&gt; Rooting the Amazon Echo Dot</title>
+      <link>//localhost:1313/posts/alexa-2/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/alexa-2/</guid>
+      <description>&lt;p&gt;A new method to gain a tethered root shell on the Echo Dot 2nd generation by patching the Little Kernel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&gt; Alexa, what is my Wi-Fi password?</title>
+      <link>//localhost:1313/posts/alexa-1/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/alexa-1/</guid>
+      <description>&lt;p&gt;Taking a closer look at the echo dot 2nd generation using a known CPU exploit reveals a lack of security for its password storage.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

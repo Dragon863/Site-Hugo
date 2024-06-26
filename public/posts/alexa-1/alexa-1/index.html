@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     
-    <title>Dragon863 | &gt; Alexa, what is my Wi-Fi password?</title>
+    <title>Dragon863 | Alexa, what is my Wi-Fi password?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.0.8/dist/cdn/beer.min.css" rel="stylesheet" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.0.8/dist/cdn/beer.min.js"></script>
@@ -116,8 +116,8 @@
         cursor: pointer;
     }
 </style>
-<h1 class="bold large-padding m l" id="header-large">&gt; Alexa, what is my Wi-Fi password?</h1>
-<h1 class="bold large-padding s" id="header-small">&gt; Alexa, what is my Wi-Fi password?</h1>
+<h1 class="bold large-padding m l" id="header-large">Alexa, what is my Wi-Fi password?</h1>
+<h1 class="bold large-padding s" id="header-small">Alexa, what is my Wi-Fi password?</h1>
 
 <div class="max" style="border-bottom: 4px solid #FF2D2D;"></div>
 
@@ -136,7 +136,6 @@
 
 
 
-<p>Taking a closer look at the echo dot 2nd generation using a known CPU exploit reveals a lack of security for its password storage.</p>
 <p>Amazon is well known for its &ldquo;echo&rdquo; devices. Launched in 2014, these voice assistants were used to interact with Amazon&rsquo;s services, answer questions, and stream music. As time went on, the devices grew in popularity; as of 2023 they account for 21.7% of global smart speaker purchases. There have been several notable attempts to run custom software on echo devices, such as <a href="https://github.com/echohacking/wiki/wiki/Echo">this</a> project, however they have proven to be relatively secure. With so many devices in use, a weaponized echo device could be a very dangerous tool, allowing eavesdropping on sensitive conversations, giving false responses, or extracting sensitive information such as Wi-Fi passwords. More modern devices from the company run FireOS, Amazon&rsquo;s modified version of Android, on a MediaTek CPU. This is interesting, as it means both the hardware and software are similar to that found on Amazon Fire tablets. I have been experimenting with an Echo Dot 2nd generation, which uses an MT8163 processor found in the HD 8 from 2018. This fire tablet was rooted using an exploit known as <a href="https://github.com/xyzz/amonet">amonet</a>, which means it was possible to port this exploit to the Echo.</p>
 <h4 id="exploiting-the-processor-you-can-too">Exploiting the Processor: You Can Too!</h4>
 <p>After a few minor modifications, I managed to make the main amonet script dump the contents of the storage (eMMC flash memory). The modified version can be found <a href="https://github.com/Dragon863/amonet-echo">here</a>, and a graphical version is available <a href="https://github.com/Dragon863/amonet-graphical/releases">here</a>. The memory can be dumped when the device is in bootrom mode, which can be forced by placing a piece of tin foil to short the capacitor shown below to the RF shield, which temporarily prevents it from being able to boot. For a detailed disassembly guide, please check iFixit.</p>
@@ -150,6 +149,7 @@
 <h4 id="conclusion">Conclusion</h4>
 <p>In summary, while some aspects of the Echo Dot are very secure, they are not immune to tampering and modification, and demonstrate an extreme lack of security when it comes to password storage. When designing embedded hardware, it is essential to consider physical security, and I hope that we can bring this issue to Amazon&rsquo;s attention and find a permanent solution to prevent any security breaches.</p>
 <p><strong>EDIT</strong> (1.4.2023): Above, I stated that hashing passwords was an industry standard. As others have pointed out, whilst it is good practice, not all devices implement it. Also, the hashes can be used to connect to a network just like a plain text password, so hashing the WPA key is not a solution. Perhaps encrypting the passwords in a proprietary format would be acceptable, but even then it is decryptable.</p>
+
 
             </div><div class="large-space"></div>
 <nav class="wrap">
