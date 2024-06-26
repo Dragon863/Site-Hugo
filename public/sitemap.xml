@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/instructable/</loc>
+    <loc>/posts/instructable/</loc>
     <lastmod>2024-06-21T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2024-06-21T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2024-06-21T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/ha-tizen/</loc>
+    <loc>/posts/ha-tizen/</loc>
     <lastmod>2023-12-09T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/thinkled/</loc>
+    <loc>/posts/thinkled/</loc>
     <lastmod>2023-11-20T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/alexa-2/</loc>
+    <loc>/posts/alexa-2/</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/alexa-1/</loc>
+    <loc>/posts/alexa-1/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
